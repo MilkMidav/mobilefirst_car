@@ -1,0 +1,43 @@
+:root {
+  --main-color: red;
+
+  --unit-base: 12px;
+
+  --unit-50: calc(var(--unit-base) * 0.5);
+  /* 6px */
+  --unit-100: var(--unit-base);
+  /* 12px */
+  --unit-150: calc(var(--unit-base) * 1.5);
+  /* 18px */
+  --unit-200: calc(var(--unit-base) * 2);
+  /* 22px */
+  --unit-300: calc(var(--unit-base) * 3);
+  /* 36px */
+
+  --color-red-100: #FF7575;
+  --color-red-200: #FF5B5B;
+  --color-red-300: #FF4949;
+  --color-red-700: #FF0D0D;
+}
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* small tablet style */
+
+@media screen and (min-width: 620px) {}
+
+/* large tablet & laptop style */
+
+@media screen and (min-width: 960px) {}
+
+/* desktop style */
+
+@media screen and (min-width: 1200px) {}
