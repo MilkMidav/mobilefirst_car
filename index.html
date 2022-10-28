@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <div class="header__profil">
-      <a class="left_side__text text--fw700" href="/index.html">
+      <a class="left_side__text text--normal letter_spacing--normal text--fw700" href="/index.html">
         MORENT
       </a>
       <div class="header__actions">
@@ -34,19 +34,19 @@
     </div>
   </header>
   <main class="main">
-    <img src="img/Ads.png" alt="">
+    <img src="img/Ads.png" alt="ads">
     <div class="catalog__switch">
       <div class="switch__rent_filter">
         <div class="rent_filter__radio_input">
           <input type="radio" id="rent-input" name="rent-input">
-          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-Up</label>
+          <label class="text--fw600 text--xs letter_spacing--xs line_height--20" for="rent-input">Pick-Up</label>
         </div>
         <div class="rent_filter__list">
           <div>
-            <p class="text--bold text--sm line_height">Location</p>
+            <p class="text--fw700 letter_spacing--xs line_height--20 text--xs">Location</p>
             <select name="location" id="location"
-              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-              <option value="" hidden>Select your city</option>
+              class="input--none_border mg_top--8 input--xss text--xss text--muted line_height--24 text--fw400">
+              <option value="" hidden>Semarang</option>
               <option value="kyiv">KYIV</option>
               <option value="kyiv">KYIV</option>
               <option value="kyiv">KYIV</option>
@@ -56,15 +56,15 @@
             </select>
           </div>
           <div>
-            <label for="date" class="text--bold text--sm line_height">Date</label>
-            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+            <label for="date" class="text--fw700 line_height--20 text--xs">Date</label>
+            <input class="input--none_border input--xss mg_top--8" type="text" placeholder="20 July 2022"
               onfocus="(this.type='date')">
           </div>
           <div>
-            <p class="text--bold text--sm line_height">Time</p>
+            <p class="text--fw700 line_height--20 text--xs">Time</p>
             <select name="time" id="time"
-              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-              <option class="" value="" hidden>Select your time</option>
+              class="input--xsss input--none_border mg_top--8 input--xs  text--muted text--xxs line_height--24">
+              <option class="" value="" hidden>17:00</option>
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -85,14 +85,14 @@
       <div class="switch__rent_filter">
         <div class="rent_filter__radio_input">
           <input type="radio" id="rent-input" name="rent-input">
-          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
+          <label class="text--fw600 text--xs letter_spacing--xs line_height--20" for="rent-input">Drop-off</label>
         </div>
         <div class="rent_filter__list">
           <div>
-            <p class="text--bold text--sm line_height">Location</p>
+            <p class="text--fw700 line_height--20 text--xs">Location</p>
             <select name="location" id="location"
-              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-              <option value="" hidden>Select your city</option>
+              class="input--none_border mg_top--8 input--xss text--xss text--muted line_height--24 text--fw400">
+              <option value="" hidden>Semarang</option>
               <option value="kyiv">KYIV</option>
               <option value="kyiv">KYIV</option>
               <option value="kyiv">KYIV</option>
@@ -102,15 +102,15 @@
             </select>
           </div>
           <div>
-            <label for="date" class="text--bold text--sm line_height">Date</label>
-            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+            <label for="date" class="text--fw700 line_height--20 text--xs">Date</label>
+            <input class="input--none_border input--xss mg_top--8" type="text" placeholder="21 July 2022"
               onfocus="(this.type='date')">
           </div>
           <div>
-            <p class="text--bold text--sm line_height">Time</p>
+            <p class="text--fw700 line_height--20 text--xs">Time</p>
             <select name="time" id="time"
-              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-              <option class="" value="" hidden>Select your time</option>
+              class="input--xsss input--none_border mg_top--8 text--muted text--xxs text--fw400 line_height--24">
+              <option class="" value="" hidden>18:00</option>
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -128,20 +128,20 @@
     </div>
     <div class="popular_car">
       <div>
-        <p class="heading__text text text--semi_bold line_height">Recent car</p>
-        <p class="view text text--semi_bold line_height">View all</p>
+        <p class="text--xs text--fw600 line_height--20">Recent car</p>
+        <p class="view text--xs text--fw600 line_height--20">View all</p>
       </div>
-      <div class="grid">
+      <div class="popular_car__container">
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">Nissan GT-R</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">Sport</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>80L</p>
@@ -155,24 +155,24 @@
               <p>2 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <div>
               <p>$80.00/<span class="text text--muted">days</span></p>
-              <p class="price text--xs line_height">$100.00</p>
+              <p class="price text--xs line_height--20">$100.00</p>
             </div>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">Rolls-Royce</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">Rolls-Royce</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">Sport</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>70L</p>
@@ -186,21 +186,21 @@
               <p>4 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>$96.00/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">Nissan GT-R</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">Sport</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>80L</p>
@@ -214,24 +214,24 @@
               <p>2 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <div>
               <p>$80.00/<span class="text text--muted">days</span></p>
-              <p class="price text--xs line_height">$100.00</p>
+              <p class="price text--xs line_height--20">$100.00</p>
             </div>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">Koenigsegg</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">Koenigsegg</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">Sport</p>
             </div>
             <img class="heart" src="img/Like.png" alt="like" />
           </div>
           <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -245,9 +245,9 @@
               <p>2 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>$99.00/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
       </div>
@@ -259,13 +259,13 @@
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">All New Rush</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">All New Rush</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>70L</p>
@@ -279,24 +279,24 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <div>
               <p>$72.00/<span class="text text--muted">day</span></p>
-              <p class="price text--xs line_height">$80.00</p>
+              <p class="price text--xs line_height--20">$80.00</p>
             </div>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">CR-V</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/Like.png" alt="like" />
           </div>
           <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>80L</p>
@@ -310,21 +310,21 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>80.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">All New Terios</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -339,21 +339,21 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>74.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">All New Terios</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -368,21 +368,21 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>74.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">MG ZX Excite</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">hatchback</p>
             </div>
             <img class="heart" src="img/Like.png" alt="like" />
           </div>
           <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -397,22 +397,22 @@
               <p>4 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>74.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
 
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">New MG ZS</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">New MG ZS</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/empty-like.png" alt="like" />
           </div>
           <img class="asuv_car_img" src="img/new_mg_zs.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -427,21 +427,21 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>80.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">CR-V</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">SUV</p>
             </div>
             <img class="heart" src="img/Like.png" alt="like" />
           </div>
           <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>80L</p>
@@ -455,21 +455,21 @@
               <p>6 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>80.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
         <div class="box_car">
           <div class="box_car__title_small">
             <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
-              <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
+              <p class="about_car__name text--fw700 text--md line_height--20--md">MG ZX Excite</p>
+              <p class="about_car__type text--fw700 text--xs line_height--20--sm">hatchback</p>
             </div>
             <img class="heart" src="img/Like.png" alt="like" />
           </div>
           <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--xs line_height--sm">
+          <div class="box_car__specification text--normal text--xs line_height--20--sm">
             <div class="specification__gasoline">
               <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
               <p>90L</p>
@@ -484,9 +484,9 @@
               <p>4 People</p>
             </div>
           </div>
-          <div class="box_car__amount text--bold text--md line_height--md">
+          <div class="box_car__amount text--fw700 text--md line_height--20--md">
             <p>74.00$/<span class="text text--muted">day</span></p>
-            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+            <button class="button-primary button--sm text--fw600 text">Rent Now</button>
           </div>
         </div>
       </div>
@@ -499,53 +499,53 @@
   <footer class="footer">
     <div class="footer__info_bar">
       <div class="info_bar__text_info">
-        <a href="index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
-        <p class="text_info__text line_height--32 text--fw500 text--sm">Our vision is to provide convenience
+        <a href="index.html" class="botton_logo text--fw600 text--xl">MORENT</a>
+        <p class="text_info__text line_height--20--32 text--fw500">Our vision is to provide convenience
           and help increase
           your sales business.</p>
       </div>
       <div class="info_bar__help">
         <div>
-          <p class="text--semi_bold text--md line_height--md">
+          <p class="text--fw600 text--md line_height--20--md">
             About
           </p>
           <div class="help__link_info">
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">How it work</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Featured</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Partnership</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Business Relation</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">How it work</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Featured</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Partnership</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Business Relation</a>
           </div>
         </div>
         <div>
-          <p class="text--semi_bold text--md line_height--md">
+          <p class="text--fw600 text--md line_height--20--md">
             Community
           </p>
           <div class="help__link_info">
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Events</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Blog</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Podcast</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Invite a friend</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Events</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Blog</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Podcast</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Invite a friend</a>
           </div>
         </div>
         <div>
-          <p class="text--semi_bold text--md line_height--md">
+          <p class="text--fw600 text--md line_height--20--md">
             Socials
           </p>
           <div class="help__link_info">
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Discord</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Instagram</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Twitter</a>
-            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Facebook</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Discord</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Instagram</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Twitter</a>
+            <a class="link link--block text--fw500 line_height--20--sm" href="">Facebook</a>
           </div>
         </div>
       </div>
     </div>
     <hr class="footer__line">
     <div class="footer__rights">
-      <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
+      <p class=text--fw600 line_height--20--32">©2022 MORENT. All rights reserved</p>
       <div class="rights__right">
-        <a class="text--sm text--semi_bold line_height--32">Privacy & Policy</a>
-        <a class="text--sm text--semi_bold line_height--32">Terms & Condition</a>
+        <a class=text--fw600 line_height--20--32">Privacy & Policy</a>
+        <a class=text--fw600 line_height--20--32">Terms & Condition</a>
       </div>
     </div>
 

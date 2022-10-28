@@ -10,10 +10,16 @@
   /* 12px */
   --unit-150: calc(var(--unit-base) * 1.5);
   /* 18px */
+  --unit-166: calc(var(--unit-base) * 1.66);
+  /* 20px */
   --unit-200: calc(var(--unit-base) * 2);
   /* 24px */
   --unit-300: calc(var(--unit-base) * 3);
   /* 36px */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a,
@@ -23,7 +29,11 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  box-sizing: border-box;
+  font-size: var(--unit-100);
+}
+
+body {
+  background: #F6F7F9;
 }
 
 @font-face {
@@ -35,6 +45,18 @@ body {
 
 .display--none {
   display: none;
+}
+
+.text--xss {
+  font-size: 1em;
+}
+
+.text--xs {
+  font-size: 1.3em;
+}
+
+.text--normal {
+  font-size: 2em;
 }
 
 .text--muted {
@@ -57,8 +79,24 @@ body {
   font-weight: 700;
 }
 
+.letter_spacing--xs {
+  letter-spacing: -0.02em;
+}
+
 .letter_spacing--sm {
   letter-spacing: 0.1em;
+}
+
+.letter_spacing--normal {
+  letter-spacing: 1px;
+}
+
+.line_height--20 {
+  line-height: var(--unit-166);
+}
+
+.line_height--24 {
+  line-height: var(--unit-200);
 }
 
 .button {
@@ -87,13 +125,21 @@ body {
   border-radius: 10px;
 }
 
-.input--search_sm::placeholder {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: #3D5278;
+.input--xs {
+  width: 116px;
+  display: block;
 }
+
+.input--xss {
+  width: 76px;
+  display: block;
+}
+
+.input--xsss {
+  width: 55px;
+  display: block;
+}
+
 
 .input--none_border {
   border: none;
@@ -104,6 +150,14 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 90px;
+}
+
+.mg_top--16 {
+  margin-top: 16px;
+}
+
+.mg_top--8 {
+  margin-top: 8px;
 }
 
 
@@ -132,7 +186,6 @@ body {
 
 .left_side__text {
   color: var(--main-color);
-  font-size: var(--unit-200);
 }
 
 .header__search {
@@ -140,6 +193,14 @@ body {
   padding: 0 24px 34px 24px;
   display: flex;
   padding-bottom: var(--unit-300);
+}
+
+.input--search_sm::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #3D5278;
 }
 
 .header__search::before {
@@ -158,7 +219,7 @@ body {
 }
 
 
-.main img {
+.main>img {
   width: 94%;
   margin: 0 3% 32px 3%;
 }
@@ -167,17 +228,16 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  justify-content: space-between;
 }
 
 .switch__rent_filter {
-  max-width: 486px;
+  box-sizing: border-box;
+  max-width: 350px;
   width: 100%;
-  height: 132px;
   border-radius: 10px;
   background-color: #FFFFFF;
-  padding: 24px 24px 28px 24px;
+  padding: 16px;
+  margin: auto;
 }
 
 .rent_filter__list {
@@ -192,27 +252,161 @@ body {
 
 .rent_filter__list>div>input::placeholder {
   color: #90A3BF;
-  font-size: 12px;
+  font-size: var(--unit-100);
 }
 
 .switch__button {
   cursor: pointer;
   border: none;
+  height: 60px;
+  width: 60px;
   display: flex;
   position: absolute;
-  left: 230px;
-  top: 130px;
+  left: 45%;
+  top: 100px;
   background-color: #3563E9;
   border-radius: 10px;
-  width: 60px;
-  height: 60px;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 
 .switch__button:hover {
   background-color: #0743f7;
 }
+
+.switch__rent_filter:first-child {
+  margin-bottom: 32px;
+}
+
+.rent_filter__list>div:nth-child(1) {
+  border-right: 1px solid rgba(195, 212, 233, 0.4);
+  padding-right: var(--unit-150);
+}
+
+.rent_filter__list>div:nth-child(2) {
+  border-right: 1px solid rgba(195, 212, 233, 0.4);
+  padding-right: var(--unit-150);
+}
+
+.popular_car>div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 24px 20px 24px;
+}
+
+.popular_car>div>p:nth-child(2) {
+  cursor: pointer;
+}
+
+.view {
+  color: var(--main-color);
+}
+
+.popular_car__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.box_car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 286px;
+  border-radius: 10px;
+  padding: 24px;
+  background: #FFFFFF;
+  margin-right: 20px;
+}
+
+.box_car__title_small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_small__about_car {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about_car__name {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  color: #1A202C;
+}
+
+.about_car__type {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
+}
+
+.heart {
+  cursor: pointer;
+  width: 20px;
+  height: 17.8px;
+}
+
+.box_car__specification {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
+}
+
+.specification__gasoline {
+  display: flex;
+  align-items: center;
+}
+
+.specification__steering {
+  display: flex;
+  align-items: center;
+}
+
+.specification__capacity {
+  display: flex;
+  align-items: center;
+}
+
+.icon_specification {
+  width: 20.75px;
+  height: 21.5px;
+  margin-right: 9px;
+}
+
+.box_car__amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  color: #1A202C;
+}
+
+
+.sport_car_img {
+  width: 180px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.suv_car_img {
+  width: 260px;
+  height: 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* small tablet style */
 
