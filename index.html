@@ -11,545 +11,545 @@
 
 <body>
   <header class="header">
-    <header class="header">
-      <div class="header__left_side">
-        <a class="left_side__text text--semi_bold text--xl" href="/index.html">
-          MORENT
-        </a>
-        <div class="left_side__search">
-          <input class="input--search" type="search" name="search" id="search" placeholder="Search something here">
-        </div>
-      </div>
+    <div class="header__profil">
+      <a class="left_side__text text--fw700" href="/index.html">
+        MORENT
+      </a>
       <div class="header__actions">
-        <div class="icon_circle icon--sm">
+        <div class="icon_circle icon--sm display--none">
           <img class="size__heart right_icon" src="img/like_list_img.png" alt="heart_img">
         </div>
-        <div class="icon_circle icon--sm red_dot">
+        <div class="icon_circle icon--sm red_dot display--none">
           <img class="size__notif right_icon" src="img/notification.png" alt="notif_img">
         </div>
-        <div class="icon_circle icon--sm">
+        <div class="icon_circle icon--sm display--none">
           <img class="size__setting right_icon" src="img/user_setting.png" alt="setting_icon">
         </div>
-        <img class="icon_circle avatar" src="img/user_icon.png" alt="Alex_user_icon">
+        <img class="avatar" src="img/user_icon.png" alt="Alex_user_icon">
       </div>
-    </header>
-    <main class="main">
-      <img src="img/Ads.png" alt="">
-      <div class="catalog__switch">
-        <div class="switch__rent_filter">
-          <div class="rent_filter__radio_input">
-            <input type="radio" id="rent-input" name="rent-input">
-            <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-Up</label>
-          </div>
-          <div class="rent_filter__list">
-            <div>
-              <p class="text--bold text--sm line_height">Location</p>
-              <select name="location" id="location"
-                class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-                <option value="" hidden>Select your city</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-              </select>
-            </div>
-            <div>
-              <label for="date" class="text--bold text--sm line_height">Date</label>
-              <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
-                onfocus="(this.type='date')">
-            </div>
-            <div>
-              <p class="text--bold text--sm line_height">Time</p>
-              <select name="time" id="time"
-                class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-                <option class="" value="" hidden>Select your time</option>
-                <option value="08:00">08:00</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">15:00</option>
-                <option value="16:00">16:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-              </select>
-            </div>
-          </div>
+    </div>
+    <div class="header__search">
+      <input class="input--search_sm" type="search" name="search" id="search" placeholder="Search something here">
+      <img src="img/setting_icon.svg" alt="search_icon">
+    </div>
+  </header>
+  <main class="main">
+    <img src="img/Ads.png" alt="">
+    <div class="catalog__switch">
+      <div class="switch__rent_filter">
+        <div class="rent_filter__radio_input">
+          <input type="radio" id="rent-input" name="rent-input">
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-Up</label>
         </div>
-        <button class="switch__button">
-          <img src="img/Swap.png" alt="swap_arrow">
-        </button>
-        <div class="switch__rent_filter">
-          <div class="rent_filter__radio_input">
-            <input type="radio" id="rent-input" name="rent-input">
-            <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
+        <div class="rent_filter__list">
+          <div>
+            <p class="text--bold text--sm line_height">Location</p>
+            <select name="location" id="location"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+            </select>
           </div>
-          <div class="rent_filter__list">
-            <div>
-              <p class="text--bold text--sm line_height">Location</p>
-              <select name="location" id="location"
-                class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-                <option value="" hidden>Select your city</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-              </select>
-            </div>
-            <div>
-              <label for="date" class="text--bold text--sm line_height">Date</label>
-              <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
-                onfocus="(this.type='date')">
-            </div>
-            <div>
-              <p class="text--bold text--sm line_height">Time</p>
-              <select name="time" id="time"
-                class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
-                <option class="" value="" hidden>Select your time</option>
-                <option value="08:00">08:00</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">15:00</option>
-                <option value="16:00">16:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-              </select>
-            </div>
+          <div>
+            <label for="date" class="text--bold text--sm line_height">Date</label>
+            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+              onfocus="(this.type='date')">
+          </div>
+          <div>
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option class="" value="" hidden>Select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
           </div>
         </div>
       </div>
-      <div class="popular_car">
-        <div>
-          <p class="heading__text text text--semi_bold line_height">Recent car</p>
-          <p class="view text text--semi_bold line_height">View all</p>
+      <button class="switch__button">
+        <img src="img/Swap.png" alt="swap_arrow">
+      </button>
+      <div class="switch__rent_filter">
+        <div class="rent_filter__radio_input">
+          <input type="radio" id="rent-input" name="rent-input">
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
         </div>
-        <div class="grid">
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>80L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>2 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <div>
-                <p>$80.00/<span class="text text--muted">days</span></p>
-                <p class="price text--xs line_height">$100.00</p>
-              </div>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
+        <div class="rent_filter__list">
+          <div>
+            <p class="text--bold text--sm line_height">Location</p>
+            <select name="location" id="location"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+            </select>
           </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">Rolls-Royce</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>70L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>4 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>$96.00/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
+          <div>
+            <label for="date" class="text--bold text--sm line_height">Date</label>
+            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+              onfocus="(this.type='date')">
           </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>80L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>2 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <div>
-                <p>$80.00/<span class="text text--muted">days</span></p>
-                <p class="price text--xs line_height">$100.00</p>
-              </div>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">Koenigsegg</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
-              </div>
-              <img class="heart" src="img/Like.png" alt="like" />
-            </div>
-            <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>2 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>$99.00/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
+          <div>
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option class="" value="" hidden>Select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
           </div>
         </div>
       </div>
-
-      <div class="recomendation_car">
-        <p>Recommendation car</p>
-        <div class="grid">
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">All New Rush</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>70L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <div>
-                <p>$72.00/<span class="text text--muted">day</span></p>
-                <p class="price text--xs line_height">$80.00</p>
-              </div>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/Like.png" alt="like" />
-            </div>
-            <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>80L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>80.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>74.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>74.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
-              </div>
-              <img class="heart" src="img/Like.png" alt="like" />
-            </div>
-            <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Electric</p>
-              </div>
-              <div class="specification__capacity">
-
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>4 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>74.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">New MG ZS</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/empty-like.png" alt="like" />
-            </div>
-            <img class="asuv_car_img" src="img/new_mg_zs.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>80.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
-              </div>
-              <img class="heart" src="img/Like.png" alt="like" />
-            </div>
-            <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>80L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Manual</p>
-              </div>
-              <div class="specification__capacity">
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>6 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>80.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-          <div class="box_car">
-            <div class="box_car__title_small">
-              <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
-                <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
-              </div>
-              <img class="heart" src="img/Like.png" alt="like" />
-            </div>
-            <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--xs line_height--sm">
-              <div class="specification__gasoline">
-                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-                <p>90L</p>
-              </div>
-              <div class="specification__steering">
-                <img class="icon_specification" src="img/steering.png" alt="steering" />
-                <p>Electric</p>
-              </div>
-              <div class="specification__capacity">
-
-                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-                <p>4 People</p>
-              </div>
-            </div>
-            <div class="box_car__amount text--bold text--md line_height--md">
-              <p>74.00$/<span class="text text--muted">day</span></p>
-              <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="popular_car">
       <div>
-        <button>Show more car</button>
-        <p>120 car</p>
+        <p class="heading__text text text--semi_bold line_height">Recent car</p>
+        <p class="view text text--semi_bold line_height">View all</p>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__info_bar">
-        <div class="info_bar__text_info">
-          <a href="index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
-          <p class="text_info__text line_height--32 text--fw500 text--sm">Our vision is to provide convenience
-            and help increase
-            your sales business.</p>
-        </div>
-        <div class="info_bar__help">
-          <div>
-            <p class="text--semi_bold text--md line_height--md">
-              About
-            </p>
-            <div class="help__link_info">
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">How it work</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Featured</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Partnership</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Business Relation</a>
+      <div class="grid">
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>80L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>2 People</p>
             </div>
           </div>
-          <div>
-            <p class="text--semi_bold text--md line_height--md">
-              Community
-            </p>
-            <div class="help__link_info">
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Events</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Blog</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Podcast</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Invite a friend</a>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <div>
+              <p>$80.00/<span class="text text--muted">days</span></p>
+              <p class="price text--xs line_height">$100.00</p>
+            </div>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">Rolls-Royce</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>70L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>4 People</p>
             </div>
           </div>
-          <div>
-            <p class="text--semi_bold text--md line_height--md">
-              Socials
-            </p>
-            <div class="help__link_info">
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Discord</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Instagram</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Twitter</a>
-              <a class="link link--block text--fw500 text--sm line_height--sm" href="">Facebook</a>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>$96.00/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
             </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>80L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>2 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <div>
+              <p>$80.00/<span class="text text--muted">days</span></p>
+              <p class="price text--xs line_height">$100.00</p>
+            </div>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">Koenigsegg</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
+            </div>
+            <img class="heart" src="img/Like.png" alt="like" />
+          </div>
+          <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>2 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>$99.00/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
           </div>
         </div>
       </div>
-      <hr class="footer__line">
-      <div class="footer__rights">
-        <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
-        <div class="rights__right">
-          <a class="text--sm text--semi_bold line_height--32">Privacy & Policy</a>
-          <a class="text--sm text--semi_bold line_height--32">Terms & Condition</a>
-        </div>
-      </div>
+    </div>
 
-    </footer>
+    <div class="recomendation_car">
+      <p>Recommendation car</p>
+      <div class="grid">
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">All New Rush</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>70L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <div>
+              <p>$72.00/<span class="text text--muted">day</span></p>
+              <p class="price text--xs line_height">$80.00</p>
+            </div>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/Like.png" alt="like" />
+          </div>
+          <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>80L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>80.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>74.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>74.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
+            </div>
+            <img class="heart" src="img/Like.png" alt="like" />
+          </div>
+          <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Electric</p>
+            </div>
+            <div class="specification__capacity">
+
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>4 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>74.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">New MG ZS</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/empty-like.png" alt="like" />
+          </div>
+          <img class="asuv_car_img" src="img/new_mg_zs.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>80.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
+            </div>
+            <img class="heart" src="img/Like.png" alt="like" />
+          </div>
+          <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>80L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Manual</p>
+            </div>
+            <div class="specification__capacity">
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>6 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>80.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+        <div class="box_car">
+          <div class="box_car__title_small">
+            <div class="title_small__about_car">
+              <p class="about_car__name text--bold text--md line_height--md">MG ZX Excite</p>
+              <p class="about_car__type text--bold text--xs line_height--sm">hatchback</p>
+            </div>
+            <img class="heart" src="img/Like.png" alt="like" />
+          </div>
+          <img class="asuv_car_img" src="img/mg_zh_excite.png" alt="car_img" />
+          <div class="box_car__specification text--normal text--xs line_height--sm">
+            <div class="specification__gasoline">
+              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+              <p>90L</p>
+            </div>
+            <div class="specification__steering">
+              <img class="icon_specification" src="img/steering.png" alt="steering" />
+              <p>Electric</p>
+            </div>
+            <div class="specification__capacity">
+
+              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+              <p>4 People</p>
+            </div>
+          </div>
+          <div class="box_car__amount text--bold text--md line_height--md">
+            <p>74.00$/<span class="text text--muted">day</span></p>
+            <button class="button-primary button--sm text--semi_bold text">Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button>Show more car</button>
+      <p>120 car</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__info_bar">
+      <div class="info_bar__text_info">
+        <a href="index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
+        <p class="text_info__text line_height--32 text--fw500 text--sm">Our vision is to provide convenience
+          and help increase
+          your sales business.</p>
+      </div>
+      <div class="info_bar__help">
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
+            About
+          </p>
+          <div class="help__link_info">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">How it work</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Featured</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Partnership</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Business Relation</a>
+          </div>
+        </div>
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
+            Community
+          </p>
+          <div class="help__link_info">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Events</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Blog</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Podcast</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Invite a friend</a>
+          </div>
+        </div>
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
+            Socials
+          </p>
+          <div class="help__link_info">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Discord</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Instagram</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Twitter</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer__line">
+    <div class="footer__rights">
+      <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
+      <div class="rights__right">
+        <a class="text--sm text--semi_bold line_height--32">Privacy & Policy</a>
+        <a class="text--sm text--semi_bold line_height--32">Terms & Condition</a>
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>
