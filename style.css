@@ -169,6 +169,10 @@ body {
 
 /*style*/
 
+.main {
+  padding: var(--unit-200);
+}
+
 
 .header {
   position: sticky;
@@ -226,8 +230,8 @@ body {
 
 
 .main>img {
-  width: 94%;
-  margin: 0 3% 32px 3%;
+  width: 100%;
+  padding-bottom: var(--unit-166);
 }
 
 .catalog__switch {
@@ -268,7 +272,7 @@ body {
   width: 60px;
   display: flex;
   position: absolute;
-  left: 45%;
+  left: 42%;
   top: 100px;
   background-color: #3563E9;
   border-radius: 10px;
@@ -299,7 +303,7 @@ body {
 .popular_car>div:nth-child(1) {
   display: flex;
   justify-content: space-between;
-  padding: 32px 24px 20px 24px;
+  padding: 32px 0 20px 0;
 }
 
 .popular_car>div>p:nth-child(2) {
@@ -412,6 +416,38 @@ body {
   margin-right: auto;
 }
 
+.recomendation_car>p {
+  padding-top: 31px;
+}
+
+.grid_container>.box_car {
+  margin-top: 20px;
+  width: 327px;
+  height: 240px;
+}
+
+.grid_container>.box_car>div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid_container>.box_car>div:nth-child(2)>img {
+  width: 142px;
+  height: 64px;
+  margin-left: 40px;
+}
+
+.grid_container>.box_car>div>.box_car__specification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.grid_container>.box_car>.box_car__title_small>img {
+  width: 13.3px;
+  height: 11.8px;
+}
 
 /* small tablet style */
 
