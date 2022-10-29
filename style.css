@@ -47,13 +47,19 @@ body {
   display: none;
 }
 
-.text--xss {
-  font-size: 1em;
+.text-strike {
+  text-decoration: line-through;
 }
 
 .text--xs {
   font-size: 1.3em;
 }
+
+.text--xss {
+  font-size: 1em;
+}
+
+
 
 .text--normal {
   font-size: 2em;
@@ -104,7 +110,7 @@ body {
 }
 
 .button--sm {
-  padding: 10px 20px;
+  padding: 10px 16px;
 }
 
 .button-primary {
@@ -316,14 +322,13 @@ body {
   width: 240px;
   height: 286px;
   border-radius: 10px;
-  padding: 24px;
+  padding: 16px;
   background: #FFFFFF;
   margin-right: 20px;
 }
 
 .box_car__title_small {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -378,9 +383,9 @@ body {
 }
 
 .icon_specification {
-  width: 20.75px;
-  height: 21.5px;
-  margin-right: 9px;
+  width: 12.5px;
+  height: 12px;
+  margin-right: 2px;
 }
 
 .box_car__amount {
@@ -393,16 +398,16 @@ body {
 
 
 .sport_car_img {
-  width: 180px;
-  height: 56px;
+  width: 210px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
 }
 
 
 .suv_car_img {
-  width: 260px;
-  height: 112px;
+  width: 210px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
 }
