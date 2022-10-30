@@ -10,20 +10,21 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__profil">
       <a class="logo text--normal letter_spacing--normal text--fw700" href="/index.html">
         MORENT
       </a>
       <div class="header__actions">
-        <div class="icon_circle icon--sm display--none">
-          <img class="size__heart right_icon" src="img/like_list_img.png" alt="heart_img">
+        <div class="icon--sm display--none">
+          <img class="icon--set" src="img/like_list_img.png" alt="heart_img">
         </div>
-        <div class="icon_circle icon--sm red_dot display--none">
-          <img class="size__notif right_icon" src="img/notification.png" alt="notif_img">
+        <div class="icon--sm   red_dot display--none">
+          <img class="icon--set" src="img/notification.png" alt="notif_img">
         </div>
-        <div class="icon_circle icon--sm display--none">
-          <img class="size__setting right_icon" src="img/user_setting.png" alt="setting_icon">
+        <div class="icon--sm  display--none">
+          <img class="icon--set" src="img/user_setting.png" alt="setting_icon">
         </div>
         <img class="avatar" src="img/user_icon.png" alt="Alex_user_icon">
       </div>
@@ -34,7 +35,10 @@
     </div>
   </header>
   <main class="main">
-    <img src="img/Ads.png" alt="ads">
+    <div class="">
+      <img class="main__ads" src="img/Ads.png" alt="rent_ads">
+      <img class="main__ads display--none" src="img/Ads_2.png" alt="rent_ads2">
+    </div>
     <div class="catalog__switch">
       <div class="switch__rent_filter">
         <div class="rent_filter__radio_input">
@@ -531,7 +535,7 @@
       </div>
     </div>
     <div>
-      <button class="button-primary button--sm ">Show more car</button>
+      <button class="button-primary button--sm text--fw600 text--xss">Show More Car</button>
       <p class="text--muted text--xs text--fw700">120 car</p>
     </div>
   </main>
