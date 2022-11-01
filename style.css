@@ -177,11 +177,11 @@ body {
   color: #0743f7;
 }
 
-.mg_top--16 {
+.mt--16 {
   margin-top: 16px;
 }
 
-.mg_top--8 {
+.mt--8 {
   margin-top: 8px;
 }
 
@@ -201,6 +201,7 @@ body {
 
 .header {
   position: sticky;
+  z-index: 1;
   top: 0;
   background: #FFFFFF;
   border: 1px solid rgba(195, 212, 233, 0.4);
@@ -339,12 +340,17 @@ body {
   color: var(--main-color);
 }
 
+.popular_car__container::-webkit-scrollbar {
+  display: none;
+}
+
 .popular_car__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   gap: 20px;
-  overflow: hidden;
+  overflow-x: scroll;
+
 }
 
 .box_car {
@@ -447,52 +453,48 @@ body {
   padding-top: 31px;
 }
 
-.grid_container>.box_car {
+.recomendation_car__car_container>.box_car {
   margin-top: 20px;
   width: 327px;
   height: 240px;
 }
 
-.grid_container>.box_car>div:nth-child(2) {
+.recomendation_car__car_container>.box_car>div:nth-child(2) {
   display: flex;
   justify-content: space-between;
 }
 
-.grid_container>.box_car>div:nth-child(2)>img {
+.recomendation_car__car_container>.box_car>div:nth-child(2)>img {
   width: 142px;
   height: 64px;
   margin-left: 40px;
 }
 
-.grid_container>.box_car>div>.box_car__specification {
+.recomendation_car__car_container>.box_car>div>.box_car__specification {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
 }
 
-.grid_container>.box_car>.box_car__title_small>img {
+.recomendation_car__car_container>.box_car>.box_car__title_small>img {
   width: 13.3px;
   height: 11.8px;
 }
 
 .main>div:last-child {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
   padding-top: 58px;
+  justify-content: space-between;
   align-items: center;
-
-
 }
 
 .main>div:last-child>button {
-  grid-column: 3;
+  margin-left: 31%;
+  margin-right: auto;
 }
 
-.main>div:last-child>p {
-  grid-column: 5;
-  justify-self: end;
-}
 
 .text_info__text {
   max-width: 216px;
@@ -527,14 +529,20 @@ body {
   padding-top: 32px;
 }
 
+.recomendation_car__car_container {
+  display: grid;
+  justify-items: center;
+}
+
+
 /*mobile--lg*/
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 429px) {
   .switch__button {
     left: 45%;
   }
 
-  .grid_container {
+  .recomendation_car__car_container {
     display: grid;
     justify-items: center;
   }
@@ -557,6 +565,11 @@ body {
 
   .footer__rights>p {
     padding-top: 0px;
+  }
+
+  .main>div:last-child>button {
+    margin-left: 40%;
+    margin-right: auto;
   }
 }
 
@@ -592,13 +605,15 @@ body {
     top: 110px;
   }
 
-  .grid_container {
+  .recomendation_car__car_container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 
   .main>div:last-child>button {
     border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main>div:last-child>p {
@@ -639,11 +654,11 @@ body {
     height: 400px;
   }
 
-  .red_dot {
+  .indikator {
     position: relative;
   }
 
-  .red_dot::after {
+  .indikator::after {
     content: "";
     position: absolute;
     width: 11px;
@@ -655,13 +670,13 @@ body {
     bottom: 33px;
   }
 
-  .icon--set {
+  .icon {
     width: 26px;
     height: 26px;
 
   }
 
-  .icon--sm {
+  .icon--round {
     border: 1px solid #C3D4E9;
     width: 46px;
     height: 46px;
@@ -695,30 +710,30 @@ body {
     left: 47.2%;
   }
 
-  .grid_container>.box_car>div:nth-child(2) {
+  .recomendation_car__car_container>.box_car>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .grid_container>.box_car>div:nth-child(2)>img {
+  .recomendation_car__car_container>.box_car>div:nth-child(2)>img {
     width: 212px;
     height: 84px;
     margin-left: 0px;
   }
 
-  .grid_container>.box_car>div>.box_car__specification {
+  .recomendation_car__car_container>.box_car>div>.box_car__specification {
     flex-direction: row;
     padding-top: 25px;
   }
 
-  .grid_container>.box_car {
+  .recomendation_car__car_container>.box_car {
     width: 240px;
     height: 286px;
     margin: 0px;
   }
 
-  .grid_container {
+  .recomendation_car__car_container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     padding-top: var(--unit-200);
@@ -814,7 +829,7 @@ body {
     margin: 0 auto;
   }
 
-  .grid_container>.box_car>div:nth-child(2)>img {
+  .recomendation_car__car_container>.box_car>div:nth-child(2)>img {
     width: 222px;
     height: 98px;
     margin: auto;
@@ -831,7 +846,7 @@ body {
     width: 20px;
   }
 
-  .grid_container>.box_car {
+  .recomendation_car__car_container>.box_car {
     width: 304px;
     height: 384px;
   }
@@ -840,7 +855,7 @@ body {
     padding: 10px 20px;
   }
 
-  .grid_container>.box_car>.box_car__title_small>img {
+  .recomendation_car__car_container>.box_car>.box_car__title_small>img {
     width: 20px;
     height: 18px;
   }
@@ -850,6 +865,7 @@ body {
   }
 
   .main>div:last-child>button {
+    margin-left: 44.5%;
     border-radius: 4px;
   }
 
